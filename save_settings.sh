@@ -2,7 +2,7 @@
 
 # Save the settings
 
-file_path=~/settings
+file_path=./settings
 
 ########################################
 #         Oh My Zsh Settings           #
@@ -10,6 +10,7 @@ file_path=~/settings
 
 # Save the .zshrc file
 cp ~/.zshrc $file_path/.zshrc
+cp ~/mb.txt $file_path/mb.txt
 
 # Save the .oh-my-zsh directory
 cp -r ~/.oh-my-zsh $file_path/.oh-my-zsh
@@ -20,7 +21,6 @@ cp -r ~/.oh-my-zsh $file_path/.oh-my-zsh
 
 # Save the Homebrew settings
 brew list > $file_path/brew_list.txt
-brew cask list > $file_path/brew_cask_list.txt
 
 # Save the Homebrew Cask settings
 brew list --cask > $file_path/brew_cask_list.txt

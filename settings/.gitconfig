@@ -1,0 +1,16 @@
+[user]
+	name = Martín Bravo
+	mail = martin.bravo@ug.uchile.cl
+	email = 123977407+MartinEBravo@users.noreply.github.com
+[init]
+	defaultBranch = main
+[core]
+	ignorecase = false
+	editor = code --wait
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[http]
+	postBuffer = 157286400
